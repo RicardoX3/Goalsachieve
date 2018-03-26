@@ -21,10 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int timer;
-        EditText timer1 =(EditText)findViewById(R.id.timer);
-        timer=Integer.parseInt(timer1.getText().toString());
-
         tv_time = (TextView) findViewById(R.id.now_time);
         new TimeThread().start();
     }
